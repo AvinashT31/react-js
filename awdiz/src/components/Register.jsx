@@ -36,15 +36,15 @@ function Register() {
             <form onSubmit={(e) => clickHandle(e)}>
                 <label>Enter your Name</label>
                 <br />
-                <input onChange={(e) => handle(e)} name="name" type="text" placeholder="Enter your Name" />
+                <input onChange={(e) => handle(e)} name="name" value={userData.name} type="text" placeholder="Enter your Name" />
                 <br />
                 <label>Enter your Email</label>
                 <br />
-                <input onChange={(e) => handle(e)} name="email" type="email" placeholder="Enter your Email" />
+                <input onChange={(e) => handle(e)} name="email" value={userData.email} type="email" placeholder="Enter your Email" />
                 <br />
                 <label>Enter your Password</label>
                 <br />
-                <input onChange={(e) =>handle(e)} name="password" type="password" placeholder="Enter your Password" />
+                <input onChange={(e) =>handle(e)} name="password" value={userData.password} type="password" placeholder="Enter your Password" />
                 <br />
                 <input type="submit" />
             </form>
