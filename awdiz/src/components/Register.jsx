@@ -1,9 +1,12 @@
-import { useState } from "react";
+ import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
 
   const [userData, setuserData] = useState({name: "", email: "", password: ""});
   console.log(userData, "userData");
+  
+  const router = useNavigate();
 
    function clickHandle(e){
    
@@ -13,6 +16,7 @@ function Register() {
     DataFromLS.push(userData);
     localStorage.setItem("userForReact", JSON.stringify(DataFromLS));
     setuserData({name: "", email: "", password: ""});
+    router ("/login");
     alert("registration done");
     
 
