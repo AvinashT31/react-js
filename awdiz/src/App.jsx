@@ -31,7 +31,8 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path = "/register" element={<Register/>} />
         <Route exact path = "/navbar" element={<Navbar/>} />   
-        <Route exact path ="/login" element={<Login/>} />     
+        <Route exact path ="/login" element={<Login/>} />  
+        <Route exact path="/effect" element={<Effect/>} />   
         {/* <Navbar/>
       Welcome to home page
 

@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { json } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Login(){
 
 const [data, setdata] = useState({email: "", password: "" });
 console.log(data, "data"); 
+
+var route = useNavigate();
 
 function handle(e){
     //  e.preventDefault();
@@ -24,7 +27,8 @@ function handle(e){
     if(flag){
         localStorage.setItem("userInfo", JSON.stringify(DataFromLS))
         setdata({email: "", password: "" });
-        alert("login done")
+        route ("/effect");
+        alert("login done");
 
     }
     else{
