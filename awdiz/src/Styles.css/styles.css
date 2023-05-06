@@ -1,0 +1,67 @@
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+#headersectionone {
+  border: 1px solid black;
+  width: 65%;
+  height: 650px;
+  text-align: left;
+}
+
+#headersectionone>div:nth-child(1) {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+}
+
+#headersectionone>div:nth-child(1) h1 {
+  color: rgb(28, 73, 128);
+}
+
+#headersectionone>div:nth-child(1) p {
+  margin-top: 10px;
+  color: rgb(118, 100, 161);
+}
+
+/* #slideshow{
+  border: 1px solid black;
+  width: 100%;
+  height: 300px;
+  margin-top: 200px;
+} */
+
+
+/* {slide && slide ((e) => (
+  <div>
+    <img src={e.image} alt="" />
+  </div>
+
+))} */
